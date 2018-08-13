@@ -122,6 +122,8 @@ $RECYCLE.BIN/
 
 # for Flask
 venv/
+logs/
+
 
 *.pyc
 __pycache__/
@@ -135,3 +137,4 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+
