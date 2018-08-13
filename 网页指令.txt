@@ -14,3 +14,7 @@
 停止uWSGI	uwsgi --stop uwsgi/uwsgi.pid
 重启uWSGI	uwsgi --reload uwsgi/uwsgi.pid
 查看uWSGI	ps aux | grep uwsgi
+
+#虚拟环境
+进入	source venv/bin/activate 
+退出	deactivate
