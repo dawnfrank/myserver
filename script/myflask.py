@@ -14,4 +14,5 @@ class MyFlask(Flask):
             urlPath = "%s%s"%(staticPath,urlInfo)
             if os.path.exists(urlPath):
                 environ['PATH_INFO'] = urlPath
+
         return super(MyFlask,self).wsgi_app(environ, start_response)
