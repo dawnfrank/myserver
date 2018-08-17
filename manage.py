@@ -1,11 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append("script")
+
+import myflask
 from flask import render_template
-from flask import Flask
 from flask_bootstrap import Bootstrap
 
-app = Flask(__name__)
+app = myflask.MyFlask(__name__)
 bootstrap = Bootstrap(app)
 
 @app.route('/')
